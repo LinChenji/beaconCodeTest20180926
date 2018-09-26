@@ -1,0 +1,8 @@
+*.elf
+*.xiw
+*.xip
+*.mak
+*.txt
+*.configuration
+/depend_Debug_CSR101x_A05/
+/depend_Release_CSR101x_A05/

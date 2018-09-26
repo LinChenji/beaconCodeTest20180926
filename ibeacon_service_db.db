@@ -1,0 +1,59 @@
+#ifndef _IBEACON_SERVICE_DB_H_
+#define _IBEACON_SERVICE_DB_H_
+
+,primary_service{
+    name:"IBEACON_SERVICE",
+    uuid:0xFA00,
+    characteristic{
+        name:"SLOT_ACTIVE",
+        uuid:0XFA01,
+        flags:FLAG_IRQ,
+        properties:[read,write]
+    },
+    characteristic{
+        name:"ADVERTISING_INTREVAL",
+        uuid:0XFA02,
+        flags:FLAG_IRQ,
+        Properties:[read,write]
+    },
+    characteristic{
+        name:"TX_POWER",
+        uuid:0XFA03,
+        flags:FLAG_IRQ,
+        properties:[read,write]
+    },
+    characteristic{
+        name:"CALCULATOR_POWER",
+        uuid:0xFA04,
+        flags:FLAG_IRQ,
+        properties:[read,write]
+    },
+    characteristic{
+        name:"UUID_MAJOR_MINOR",
+        uuid:0xFA05,
+        flags:FLAG_IRQ,
+        properties:[read,write],
+        size_value:20
+    },
+    characteristic{
+        name:"EXTRA_BYTE",
+        uuid:0xFA06,
+        flags:FLAG_IRQ,
+        properties:[read,write]
+    },
+    characteristic{
+        name:"SAVING_POWER_SWITCH",
+        uuid:0xfa07,
+        flags:FLAG_IRQ,
+        properties:[read,write]
+    },
+    characteristic{
+        name:"ON_STATE",
+        uuid:0xfa08,
+        flags:FLAG_IRQ,
+        properties:[read,write]
+    }
+}
+
+#endif
+    
